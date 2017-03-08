@@ -1,0 +1,23 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,m,n;
+	cin >> t;
+	while(t--){
+		cin >> m >> n;
+		while(m <= n){
+			int count = 1, divisor = 2, raiz = sqrt(m);
+			while(divi <= raiz){
+				if(m%divisor==0) count++;
+				divisor++;
+				if(count > 2) break;
+			}
+			if(count == 2) cout << m << endl;
+			m++;
+		}
+		cout << endl;
+	}
+	return 0;
+}
